@@ -1,7 +1,7 @@
 {
   "name": "linter-spell-pretext",
   "main": "./lib/main",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "PreTeXt spell checking using linter-spell.",
   "author": "Oscar Levin <oscar.levin@gmail.com>",
   "keywords": [
