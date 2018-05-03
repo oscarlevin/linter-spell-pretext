@@ -4,7 +4,7 @@ notifications:
     on_failure: change
 
 script:
-  - curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh
+  - script/travis-ci-build.sh
 
 git:
   depth: 10
@@ -18,7 +18,7 @@ os:
 
 env:
   global:
-    - APM_TEST_PACKAGES="language-latex"
+    - APM_TEST_PACKAGES=""
 
   matrix:
     - ATOM_CHANNEL=stable
