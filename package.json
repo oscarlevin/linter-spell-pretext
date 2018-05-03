@@ -1,9 +1,12 @@
 {
   "name": "linter-spell-pretext",
   "main": "./lib/main",
-  "version": "0.1.1",
+  "version": "0.0.0",
   "description": "PreTeXt spell checking using linter-spell.",
-  "author": "Oscar Levin <oscar.levin@gmail.com>",
+  "author": {
+    "name": "Oscar Levin",
+    "email": "oscar.levin@gmail.com"
+  },
   "keywords": [
     "pretext",
     "lint",
@@ -11,7 +14,10 @@
     "spellcheck",
     "spelling"
   ],
-  "repository": "https://github.com/oscarlevin/linter-spell-pretext",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oscarlevin/linter-spell-pretext"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0"
@@ -73,5 +79,6 @@
       "default": [],
       "order": 2
     }
-  }
+  },
+  "readmeFilename": "README.md",
 }
