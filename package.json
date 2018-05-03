@@ -1,0 +1,77 @@
+{
+  "name": "linter-spell-pretext",
+  "main": "./lib/main",
+  "version": "0.1.0",
+  "description": "PreTeXt spell checking using linter-spell.",
+  "author": "Oscar Levin <oscar.levin@gmail.com>",
+  "keywords": [
+    "pretext",
+    "lint",
+    "linter",
+    "spellcheck",
+    "spelling"
+  ],
+  "repository": "https://github.com/oscarlevin/linter-spell-pretext.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/oscarlevin/linter-spell-pretext/issues"
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.0.0",
+    "linter-spell-word-list": "^0.5.0",
+    "lodash": "^4.13.0"
+  },
+  "devDependecies": {
+    "semver": "^5.3.0"
+  },
+  "package-deps": [
+    "linter-spell"
+  ],
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "atom",
+      "latex",
+      "afterEach",
+      "beforeEach",
+      "describe",
+      "expect",
+      "it",
+      "jasmine",
+      "runs",
+      "spyOn",
+      "waitsFor",
+      "waitsForPromise"
+    ]
+  },
+  "providedServices": {
+    "linter-spell-grammar": {
+      "versions": {
+        "1.0.0": "provideGrammar"
+      }
+    },
+    "linter-spell-dictionary": {
+      "versions": {
+        "1.0.0": "provideDictionary"
+      }
+    }
+  },
+  "configSchema": {
+    "checkComments": {
+      "description": "Spell check in PreTeXt comments.",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "words": {
+      "title": "PreTeXt Words",
+      "description": "PreTeXt specific word list. Precede word with '!' to make word case sensitive.",
+      "type": "array",
+      "default": [],
+      "order": 2
+    }
+  }
+}
