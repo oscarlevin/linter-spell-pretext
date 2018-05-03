@@ -1,7 +1,7 @@
 {
   "name": "linter-spell-pretext",
   "main": "./lib/main",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "PreTeXt spell checking using linter-spell.",
   "author": "Oscar Levin <oscar.levin@gmail.com>",
   "keywords": [
@@ -11,7 +11,7 @@
     "spellcheck",
     "spelling"
   ],
-  "repository": "https://github.com/oscarlevin/linter-spell-pretext.git",
+  "repository": "https://github.com/oscarlevin/linter-spell-pretext",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0"
